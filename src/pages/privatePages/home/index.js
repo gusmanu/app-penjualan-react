@@ -30,7 +30,7 @@ function Home() {
   const { enqueueSnackbar } = useSnackbar();
   const classes = useStyles();
   const todayDateString = format(new Date(), "yyyy-MM-dd");
-  const { auth, firestore, user } = useFirebase();
+  const { firestore, user } = useFirebase();
   const produkCol = firestore.collection(`toko/${user.uid}/produk`);
   const transaksiCol = firestore.collection(`toko/${user.uid}/transaksi`);
   const [snapshotTransaksi, loadingTransaksi] = useCollection(
