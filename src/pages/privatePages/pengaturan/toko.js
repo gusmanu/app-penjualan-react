@@ -122,7 +122,7 @@ function Toko() {
           required
           margin="normal"
           multiline
-          rowMax={3}
+          rowmax={3}
           value={form.alamat}
           onChange={handleChange}
           error={error.alamat ? true : false}
@@ -156,7 +156,7 @@ function Toko() {
 
         <Button
           className={classes.buttonSubmit}
-          variant="constrained"
+          variant="contained"
           color="primary"
           disabled={isSubmitting || !isSomethingChange}
           type="submit"

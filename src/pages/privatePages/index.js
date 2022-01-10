@@ -199,9 +199,7 @@ export default function Private() {
             <Route path="/transaksi" component={Transaksi} />
             <Route component={Home} />
           </Switch>
-          <Box pt={4}>
-            <Copyright />
-          </Box>
+          <Box pt={4}></Box>
         </Container>
       </main>
     </div>
